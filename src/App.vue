@@ -1,26 +1,40 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <div id="app">
+    <NavigationBar></NavigationBar>
+    <router-view></router-view>
+  </div>
+  </body>
+  </html>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import NavigationBar from "@/components/Navigation.vue";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    NavigationBar
+  },
+  data() {
+
+  },
 }
+
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: 'Manrope', 'Segoe UI', sans-serif;
 }
 </style>
