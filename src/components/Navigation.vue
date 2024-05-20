@@ -1,10 +1,10 @@
 <template>
   <header class='flex border-b py-4 px-4 sm:px-10 bg-white font-[sans-serif] min-h-[70px] tracking-wide relative z-50'>
     <div class='flex flex-wrap items-center gap-5 w-full'>
-      <a href="javascript:void(0)"><img src="https://cdn-icons-png.freepik.com/256/924/924514.png?semt=ais_hybrid"
+      <router-link to="/"><img src="https://cdn-icons-png.freepik.com/256/924/924514.png?semt=ais_hybrid"
                                         alt="logo" class='w-12'/>
-      </a>
-      <a href="javascript:void(0)"><h1 class="text-2xl font-bold text-black font-mono">Minh Thong Itmix</h1></a>
+      </router-link>
+      <router-link to="/"><h1 class="text-2xl font-bold text-black font-mono">Minh Thong Itmix</h1></router-link>
 
       <div id="collapseMenu"
            class='max-lg:hidden lg:!block max-lg:w-full max-lg:fixed max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50'>
@@ -25,21 +25,14 @@
             <a href="javascript:void(0)"><img src="https://readymadeui.com/readymadeui.svg" alt="logo" class='w-36'/>
             </a>
           </li>
-          <li class='max-lg:border-b max-lg:py-3 px-3'>
-            <a href='javascript:void(0)'
-               class='lg:hover:text-[#007bff] text-[#007bff] block font-semibold text-[15px]'>Home</a>
+          <li class='max-lg:border-b max-lg:py-3 px-3'><router-link to="team-page"
+                                                          class='lg:hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>Team</router-link>
           </li>
-          <li class='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
-                                                          class='lg:hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>Team</a>
+          <li class='max-lg:border-b max-lg:py-3 px-3'><router-link to="post-page"
+                                                          class='lg:hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>Posts</router-link>
           </li>
-          <li class='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
-                                                          class='lg:hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>About</a>
-          </li>
-          <li class='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
-                                                          class='lg:hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>Blog</a>
-          </li>
-          <li class='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
-                                                          class='lg:hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>Work</a>
+          <li class='max-lg:border-b max-lg:py-3 px-3'><router-link to="work-page"
+                                                          class='lg:hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>Work</router-link>
           </li>
         </ul>
       </div>
